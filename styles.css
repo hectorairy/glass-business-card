@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: "Inter", sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card {
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.content h2,
+.content p {
+  margin: 10px 0;
+  text-align: center;
+  color: #222;
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stat-number {
+  font-weight: bold;
+  color: #222;
+  font-size: 1.2rem;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #444;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.social-link {
+  margin: 0 3px;
+  font-size: 1.2em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+}
+
+.social-link:nth-child(1) {
+  background-color: #24292e;
+  color: #fff;
+}
+
+.social-link:nth-child(2) {
+  background-color: #0077b5;
+  color: #fff;
+}
+
+.social-link:nth-child(3) {
+  background-color: #1da1f2;
+  color: #fff;
+}
+
+.social-link:nth-child(4) {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.social-link:nth-child(5) {
+  background-color: #1877f2;
+  color: #fff;
+}
+
+.social-link:nth-child(6) {
+  background-color: #000000;
+  color: #fff;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-message {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+.btn-follow {
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.8);
+}
